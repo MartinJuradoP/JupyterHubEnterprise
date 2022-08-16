@@ -2,7 +2,7 @@
 c.JupyterHub.authenticator_class = 'ldapauthenticator.LDAPAuthenticator'
 c.LDAPAuthenticator.server_address = 'ldap://host'
 c.LDAPAuthenticator.server_port=389
-c.LDAPAuthenticator.bind_dn_template = ['{username}','{username}']
+c.LDAPAuthenticator.bind_dn_template = ['{username}']
 c.LDAPAuthenticator.lookup_dn = False
 c.LDAPAuthenticator.user_search_base = 'OU=User,OU=ASZ,OU=Accounts,DC=domain,DC=domain,DC=domain'
 c.LDAPAuthenticator.lookup_dn_search_filter = '(sAMAccountName={login})'
