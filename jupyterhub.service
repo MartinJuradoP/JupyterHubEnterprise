@@ -1,0 +1,11 @@
+[Unit]
+Description=Jupyterhub
+ 
+[Service]
+User=jupyterhub
+ExecStart=/usr/bin/jupyterhub --JupyterHub.spawner_class=sudospawner.SudoSpawner
+WorkingDirectory=/etc/jupyterhub
+ 
+[Install]
+WantedBy=multi-user.target
+
