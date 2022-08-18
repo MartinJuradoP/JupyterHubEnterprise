@@ -6,9 +6,21 @@ This documentation is to create an Jupyterhub instance and its configuration as 
 ## Check prerequisites 📋
 ## A Linux/Unix based system
 
-Python 3.6 or greater
+Installing python3
 
-nodejs/npm
+``` bash
+
+sudo apt install python3
+
+``` 
+
+Install Node
+``` bash
+sudo apt-get install nodejs
+
+```
+
+with nodejs/npm
 
 JupyterHub can be installed with pip, and the proxy with npm:
 
@@ -258,7 +270,6 @@ This will require you to obtain an official, trusted SSL certificate or create a
 
 c.JupyterHub.ssl_key = '/path/to/my.key'
 c.JupyterHub.ssl_cert = '/path/to/my.cert'
-
 
 ```
 
