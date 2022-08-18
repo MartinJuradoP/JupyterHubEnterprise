@@ -1,4 +1,4 @@
-
+# LDAP Configuration
 c.JupyterHub.authenticator_class = 'ldapauthenticator.LDAPAuthenticator'
 c.LDAPAuthenticator.server_address = 'ldap://host'
 c.LDAPAuthenticator.server_port=389
@@ -12,3 +12,7 @@ c.LDAPAuthenticator.use_ssl = False
 c.LDAPAuthenticator.escape_userdn = False
 c.LDAPAuthenticator.valid_username_regex="^.*$"
 c.Authenticator.admin_users = {'User'}
+
+# Certificate Path
+c.JupyterHub.ssl_key = '/path/to/my.key'
+c.JupyterHub.ssl_cert = '/path/to/my.cert'

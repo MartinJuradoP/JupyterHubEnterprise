@@ -249,4 +249,16 @@ c.Authenticator.admin_users = {'User'}
 
 ```
 
+## Using an SSL Certificate
+
+Using an SSL certificate
+This will require you to obtain an official, trusted SSL certificate or create a self-signed certificate. Once you have obtained and installed a key and certificate you need to specify their locations in the jupyterhub_config.py configuration file as follows:
+
+``` python
+
+c.JupyterHub.ssl_key = '/path/to/my.key'
+c.JupyterHub.ssl_cert = '/path/to/my.cert'
+
+
+```
 
